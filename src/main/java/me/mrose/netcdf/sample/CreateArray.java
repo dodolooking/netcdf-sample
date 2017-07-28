@@ -34,7 +34,7 @@ public class CreateArray {
             f.delete();
         }
 
-        Nc4Chunking chunker = Nc4ChunkingDefault.factory(Nc4Chunking.Strategy.standard, 0, false);
+        Nc4Chunking chunker = Nc4ChunkingDefault.factory(Nc4Chunking.Strategy.standard, 5, true);
 
         NetcdfFileWriter writer = NetcdfFileWriter.createNew(NetcdfFileWriter.Version.netcdf4,
             f.getAbsolutePath(), chunker);
