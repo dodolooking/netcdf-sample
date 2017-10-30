@@ -33,6 +33,7 @@ public class CreateArray {
         if (f.exists()) {
             f.delete();
         }
+        f.createNewFile();
 
         Nc4Chunking chunker = Nc4ChunkingDefault.factory(Nc4Chunking.Strategy.standard, 5, true);
 
